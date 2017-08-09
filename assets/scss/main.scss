@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo:400,700');
+
+$backgroundColor: #2c3e50;
+$linkHoverColor: #e74c3c;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'cairo';
+    background: $backgroundColor;
+    color: white;
+}
+
+.project {
+    // border: 1px solid red;
+    border-bottom: 1px solid grey;
+    padding: 5px;
+
+    display: flex;
+
+    line-height: 1;
+
+    &:hover {
+        background: darken($backgroundColor, 5);
+    }
+}
+
+.project-image {
+    width: 100px;
+}
+
+.project-image img {
+    display: block;
+    width: 100%;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-left: 8px;
+    // border: 1px solid blue;
+}
+
+.project .project-info a {
+    text-decoration: none;
+}
+
+.project .project-info a:visited {
+    color: white;
+}
+
+.project .project-info a:hover {
+    color: #e74c3c;
+}
+
+.project-info p {
+    color: #ccc;
+}
